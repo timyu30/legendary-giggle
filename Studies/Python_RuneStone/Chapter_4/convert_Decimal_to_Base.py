@@ -22,6 +22,9 @@ def convert_decimal_to_base(num,base):
     #populate the stack with remainder
     while num > 0:
         remainder = num % base
+        print("remainder is: ", remainder)
+        print("num is", num)
+        
         s.push(remainder)
         num = num//base
 
@@ -35,5 +38,6 @@ def convert_decimal_to_base(num,base):
     print(converted_base)
     return converted_base
 
-convert_decimal_to_base(233, 2)
-convert_decimal_to_base(26, 16)
+#convert_decimal_to_base(233, 2)
+#convert_decimal_to_base(26, 16)
+convert_decimal_to_base(10,2)
